@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+void diagonal(int n,int arr[][3]){
+    int leadingDia=0,oppositeDia=0;
+    for(int i=0;i<n;i++){
+        leadingDia+=arr[i][i];
+        oppositeDia+=arr[i][n-i-1];
+    }
+    int diff=leadingDia-oppositeDia;
+    cout<<"Leading : "<<leadingDia<<endl<<"Opposite : "<<oppositeDia;
+    cout<<endl<<"Difference of Diagonals : "<<abs(diff);
+}
+int main() {
+    int arr[3][3]={{1,2,9,},{4,5,6},{7,8,4}};
+    //int n1=sizeof(arr)/sizeof(arr[0]);
+    //int n2=sizeof(arr[0])/sizeof(int);
+    //int num=n1*n2; //9
+    int n=sizeof(arr)/sizeof(arr[0]);
+    diagonal(n,arr);
+    return 0;
+}
