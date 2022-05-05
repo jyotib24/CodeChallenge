@@ -1,0 +1,24 @@
+/*
+There are 3 problems in a contest namely A,B,C respectively. 
+Alice bets Bob that problem C is the hardest while Bob says that problem B will be the hardest.
+If A is hardest print draw.
+Note: Hardest problem will have minimum number of submissions.
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+		int n,a,b,c;
+		//Scanner sc=new Scanner(System.in);
+		//n=sc.nextInt();
+		cin>>n;
+		while(n>0){
+		   cin>>a>>b>>c;
+		    if(a<b && a<c) cout<<"Draw"<<endl;
+		    else if(b<a && b<a) cout<<"Bob"<<endl;
+		    else cout<<"Alice"<<endl;
+		    	n--;
+		}
+	
+	return 0;
+	}
