@@ -27,3 +27,55 @@ int main() {
     matches(sum);
     return 0;
 }
+/*
+#include <iostream>
+using namespace std;
+ void matches(int sum){
+     int rem,value=0;
+     while(sum>0){
+           rem=sum%10;
+           switch(rem){
+            case 0: value+=4;break;
+            case 1: value+=2;break;    
+            case 2: value+=5;break;
+            case 3: value+=5;break;    
+            case 4: value+=4;break;
+            case 5: value+=5;break;
+            case 6: value+=6;break;
+            case 7: value+=3;break;
+            case 8: value+=7;break; 
+            case 9: value+=6;break;
+           }
+           sum=sum/10;
+     }
+     cout<<value;
+ }
+int main() {
+    int n,a,b,sum;
+    cin>>n;
+    while(n>0){
+    cin>>a>>b;
+    sum=a+b;
+        int rem,value=0;
+     while(sum>0){
+           rem=sum%10;
+           switch(rem){
+            case 0: value+=4;break;
+            case 1: value+=2;break;    
+            case 2: value+=5;break;
+            case 3: value+=5;break;    
+            case 4: value+=4;break;
+            case 5: value+=5;break;
+            case 6: value+=6;break;
+            case 7: value+=3;break;
+            case 8: value+=7;break; 
+            case 9: value+=6;break;
+           }
+           sum=sum/10;
+     }
+     cout<<value<<endl;
+        
+    }
+    return 0;
+}
+*/
